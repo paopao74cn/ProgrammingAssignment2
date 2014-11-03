@@ -1,0 +1,250 @@
+lm(yy~x)
+traceback
+traceback()
+lm(y~x)
+lm(y~xx)
+traceback()
+debug(lm)
+lm(y~xx)
+n
+n
+n
+n
+n
+n
+m
+n
+nn
+c
+Q
+C
+c
+Q
+debug(lm)
+lm(y~x)
+c
+?options
+options(error=recover)
+read.csv('k')
+?browser
+x <- rnorm(10)
+x
+mean(x)
+?sd
+sd(x)
+?set.seed
+set.seed(1)
+rnorm(5)
+rnorm(5)
+rnorm(5)
+set.seed(1)
+rnorm(5)
+rnorm(5)
+set.seed(1)
+rnorm(5)
+set.seed(1)
+rnorm(5)
+set.seed(2)
+rnorm(5)
+set.seed(2)
+rnorm(5)
+?rpois
+str(rpois)
+set.seed(22)
+x <- rnorm(100)
+e <- rnorm(100,0,2)
+y <- 0.5+2*x+e
+summary(y)
+plot(x,y)
+set.seed(10)
+s <- rbinom(100,1,0.5)
+x <- rbinom(100,1,0.5)
+e <- rnorm(100,0,2)
+y <- 0.5+2*x+e
+summary(y)
+plot(x,y)
+?rbinom
+xx <- rbinom(5,1,0.5)
+xx
+xx <- rbinom(5,1,0.5)
+xx
+xx <- seq(0,5,by=1)
+xx
+xx <- seq(0,5,by=2)
+xx
+xx <- seq(0,50,by=1)
+xx
+yy <- dbinom(xx,50,0.2)
+plot(xx,yy)
+set.seed(1)
+x <- rnorm(100)
+log.mu <- 0.5+0.3*x
+y <- rpois(100,exp(log.mu))
+summary(y)
+plot(x,y)
+?sample
+?letters
+letters
+sample(1:10)
+sample(1:10)
+system.time()
+c
+system.time(readLines("http://www.jhsph.edu"))
+?outer
+hibert <- function(n) {}
+hibert <- function(n) {
+i <- 1:n
+1/outer(i-1,i,'+')
+}
+x <- hibert(5)
+x
+str(x)
+i <- 1:5
+i
+i-1
+?svd
+?Rprof
+?summaryRprof
+set.seed(1)
+rpois(5,2)
+?qpois
+library(datasets)
+Rprof()
+fit <- lm(y~x1+x2)
+c
+x <- numeric()
+x
+str(x)
+?numeric
+?<<
+??<<
+?<<-
+f <- function(x,y){
+x+y/z
+}
+ls(environment(f))
+get(z,environment(f))
+get('z',environment(f))
+c
+getwd()
+setwd('./Dropbox/References/DataAnalysis_and_Statistics/JohnHopkinsDataScienceSpecialization/2_R_Programming/Week 3/Programming Assignment 2/')
+ls
+getwd()
+setwd('./Dropbox/References/DataAnalysis_and_Statistics/JohnHopkinsDataScienceSpecialization/2_R_Programming/Week 3/Programming Assignment 2/')
+getwd()
+dir('.')
+setwd('./ProgrammingAssignment2/')
+getwd()
+source('makeVector.R')
+source('cachemean.R')
+x=[1:10]
+x=1:10
+x
+str(x)
+makeVector(x)
+x
+makeVector$set
+cachemean(x)
+x
+makeVector(1:10)
+makeVector$set
+cachemean(1:10)
+str(numeric())
+makeVector(numeric(1:10))
+vec1 <- makeVector(1:10)
+vec1(1:20)
+x <- numeric(1:10)
+makeVector(1)
+makeVector$set
+g=makeVector(1)
+g(1:10)
+str(G)
+str(g)
+g(1)
+g$set(1:10)
+str(g$set(1:10))
+g$get()
+g$setmean()
+g$setmean(2)
+g$getmean()
+g(g$set(1:10),g$get(),g$setmean(3),g$getmean())
+g<-makeVector()
+g$set(1:20)
+g$get()
+g$setmean(3)
+g$getmean()
+g
+g(1:20)
+makeVector(1:20)
+gg=makeVector(22)
+gg$set(1:22)
+gg$setmean(23)
+gg
+makeVector()
+makeVector(22)$set(1:33)$setmean(33)
+makeVector(22)$set(1:33)
+makeVector(22)$setmean(33)
+makeVector(22)
+makeVector(list(1:10,,2,))
+list(1:10,,2,)
+makeVector(list(1:10,1:10,2,2))
+list(1:10,1:10,2,2)
+cachemean(1:10)
+cachemean(list(1:10,1:10,2,2))
+cachemean(list(1:10,1:10,2,2))
+c
+gg <- makeVector()
+gg$set(1:10)
+gg$setmean(2)
+cachemean(gg)
+ggg <- makeVector()
+gg$set(1:10)
+ggg$set(1:10)
+cachemean(ggg)
+ggg$set(1:100)
+cachemean(ggg)
+ggg
+ggg$get
+ggg$get()
+ggg$getmean()
+str(ggg)
+c=rbind(c(1, -1/4), c(-1/4, 1))
+cc
+c
+invc <- solve(c)
+invc
+cc <- c %*% invc
+cc
+source('cachematrix.R')
+makeCacheMatrix(x)
+k <- makeCacheMatrix(x)
+k$set(c)
+cacheSolve(k)
+source('cachematrix.R')
+cacheSolve(k)
+k$setinv(invc)
+cacheSolve(k)
+invc
+rm c
+rm(c)
+c
+rm(invc)
+invc
+y
+rm(y)
+y
+y <- makeVector()
+y$set(1:22)
+cachemean(y)
+y$setmean(10)
+cachemean(y)
+c=rbind(c(1, -1/4), c(-1/4, 1))
+c
+p
+p <- makeCacheMatrix()
+p$set(c)
+cacheSolve(p)
+invc <- solve(c)
+invc
+p$setinv(invc)
+cacheSolve(p)
